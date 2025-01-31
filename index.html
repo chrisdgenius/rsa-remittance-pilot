@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RSA Remittance Pilot Program | SquarePyramid</title>
-    <!-- Favicon -->
-      <!-- Favicon (Site Logo for Toolbar) -->
+    
+    <!-- Favicon (Site Logo for Toolbar) -->
     <link rel="icon" href="https://raw.githubusercontent.com/chrisdgenius/rsa-remittance-pilot/main/squarecampaign%20logo.png" type="image/png">
 
     <style>
@@ -17,8 +17,8 @@
             background-color: #f4f4f4;
             color: #333;
             text-align: center;
-            height: 100%;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
+            height: 100vh;
+            overflow: hidden; /* Prevent scrolling */
         }
         h1, h2, h3 {
             margin: 0;
@@ -29,7 +29,9 @@
         header {
             background-color: #0044cc;
             color: white;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             position: sticky;
@@ -37,15 +39,19 @@
             width: 100%;
             z-index: 10;
         }
+
         header img {
             width: 100px; /* Adjust the size of the logo */
             height: auto;
             margin-right: 20px; /* Add some space between the logo and title */
         }
+
         header h1 {
             font-size: 2em;
             font-weight: bold;
+            margin: 0;
         }
+
         header p {
             font-size: 1em;
             margin-top: 10px;
@@ -71,7 +77,6 @@
             width: 30%;
             margin-right: 10px;
             flex: 1;
-            min-width: 280px;
         }
 
         .content-box h3 {
@@ -97,7 +102,6 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
             margin-top: 20px;
-            text-align: center;
         }
         .cta-btn:hover {
             background-color: #e65c00;
@@ -109,7 +113,7 @@
             color: white;
             text-align: center;
             padding: 2px 0; /* Reduced padding to make the footer smaller */
-            position: relative;
+            position: absolute;
             width: 100%;
             bottom: 0;
         }
@@ -127,49 +131,17 @@
         .cta-btn + p {
             margin-top: 10px; /* Reduced space between the paragraph and the button */
         }
-
-        /* Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column; /* Stack content vertically */
-                margin: 20px;
-            }
-
-            .content-box {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-
-            .cta-btn {
-                width: 100%;
-               
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.5em;
-            }
-
-            header p {
-                font-size: 0.9em;
-            }
-
-            .cta-btn {
-                font-size: 0.9em;
-                padding: 10px 20px;
-                margin-bottom: 10px;
-            }
-        }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header Section with Logo -->
     <header>
-     <!--      <img src="https://raw.githubusercontent.com/chrisdgenius/rsa-remittance-pilot/main/squarecampaign%20logo.png" alt="Site Logo"> -->
-       <h1>RSA Remittance Pilot Program</h1>
-        <p>Helping You Secure Your Financial Future, Effortlessly</p>
+   <!--       <img src="https://raw.githubusercontent.com/chrisdgenius/rsa-remittance-pilot/main/squarecampaign%20logo.png" alt="Site Logo">  -->
+        <div>
+            <h1>RSA Remittance Pilot Program</h1>
+            <p>Helping You Secure Your Financial Future, Effortlessly</p>
+        </div>
     </header>
 
     <!-- Main Content Section -->
@@ -205,7 +177,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>Have Questions? Contact us at <a href="mailto:your@email.com">info@squarepyramid.com</a> or call <strong>+2348062359896</strong></p>
+        <p>Have Questions? Contact us at <a href="mailto:info@squarepyramid.com">info@squarepyramid.com</a> or call <strong>+2348062359896</strong></p>
     </footer>
 
 </body>
