@@ -29,7 +29,9 @@
         header {
             background-color: #0044cc;
             color: white;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             position: sticky;
@@ -37,15 +39,19 @@
             width: 100%;
             z-index: 10;
         }
+
         header img {
-            width: 20px;
+            width: 100px; /* Adjust the size of the logo */
             height: auto;
-            margin-bottom: 10px;
+            margin-right: 20px; /* Add some space between the logo and title */
         }
+
         header h1 {
             font-size: 2em;
             font-weight: bold;
+            margin: 0;
         }
+
         header p {
             font-size: 1em;
             margin-top: 10px;
@@ -132,8 +138,10 @@
     <!-- Header Section with Logo -->
     <header>
         <img src="https://raw.githubusercontent.com/chrisdgenius/rsa-remittance-pilot/main/squarecampaign%20logo.png" alt="Site Logo">
-        <h1>RSA Remittance Pilot Program</h1>
-        <p>Helping You Secure Your Financial Future, Effortlessly</p>
+        <div>
+            <h1>RSA Remittance Pilot Program</h1>
+            <p>Helping You Secure Your Financial Future, Effortlessly</p>
+        </div>
     </header>
 
     <!-- Main Content Section -->
