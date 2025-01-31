@@ -1,137 +1,221 @@
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSA Remittance Pilot Program | SquarePyramid</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/chrisdgenius/rsa-remittance-pilot/main/squarecampaign%20logo.png" type="image/png">
 
-/* Header Section */
-header {
-    background-color: #0044cc;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
-header h1 {
-    font-size: 2em;
-    font-weight: bold;
-}
-header p {
-    font-size: 1em;
-    margin-top: 10px;
-}
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+        }
 
-/* Main Content Section */
-.container {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    max-width: 1000px;
-    margin: 50px auto;
-    flex-wrap: wrap;
-}
+        /* Header Section */
+        header {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        header h1 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1em;
+            margin-top: 10px;
+        }
 
-/* Content Box Style */
-.content-box {
-    background-color: #ffffff;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    margin-right: 10px;
-    flex: 1;
-    min-width: 280px;
-}
+        /* Main Content Section */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            max-width: 1000px;
+            margin: 50px auto;
+            flex-wrap: wrap;
+            flex-grow: 1;
+        }
 
-.content-box h3 {
-    color: #007BFF;
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
+        /* Content Box Style */
+        .content-box {
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-right: 10px;
+            flex: 1;
+            min-width: 280px;
+        }
 
-.content-box p {
-    font-size: 0.9em;
-    line-height: 1.4;
-    color: #555;
-}
+        .content-box h3 {
+            color: #007BFF;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
 
-/* Call-to-Action Button */
-.cta-btn {
-    background-color: #ff6600;
-    color: white;
-    font-size: 1em;
-    padding: 12px 25px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-    text-align: center;
-    display: inline-block; /* Ensure the button stays inline with its content */
-}
-.cta-btn:hover {
-    background-color: #e65c00;
-}
+        .content-box p {
+            font-size: 0.9em;
+            line-height: 1.4;
+            color: #555;
+        }
 
-/* Footer Section */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
-}
+        /* Call-to-Action Section */
+        .cta-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+            padding: 0 15px;
+        }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        margin: 20px;
-    }
+        .cta-text {
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
 
-    .content-box {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+        /* Call-to-Action Button */
+        .cta-btn {
+            display: inline-block;
+            background-color: #ff6600;
+            color: white;
+            font-size: 1em;
+            padding: 12px 25px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            max-width: 300px;
+            width: 100%;
+            text-align: center;
+        }
+        .cta-btn:hover {
+            background-color: #e65c00;
+        }
 
-    /* Button Adjustments */
-    .cta-btn {
-        width: auto; /* Do not make the button full-width */
-        max-width: 300px; /* Limit the button width */
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            margin-top: auto;
+        }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em;
-    }
+        footer a {
+            color: #ff6600;
+            text-decoration: none;
+        }
 
-    header p {
-        font-size: 0.9em;
-    }
+        footer a:hover {
+            text-decoration: underline;
+        }
 
-    /* Button Adjustments */
-    .cta-btn {
-        font-size: 0.9em;
-        padding: 10px 20px;
-        margin-bottom: 10px;
-        width: auto; /* Do not make the button full-width */
-        max-width: 80%; /* Limit button width on very small screens */
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: 20px;
+            }
+
+            .content-box {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .cta-btn {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            header p {
+                font-size: 0.9em;
+            }
+
+            .cta-btn {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>RSA Remittance Pilot Program</h1>
+        <p>Helping You Secure Your Financial Future, Effortlessly</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- Register and Contribute Section -->
+        <div class="content-box">
+            <h3>How It Works</h3>
+            <p>✅ <strong>Register</strong> – Sign up and provide your RSA details (or get help opening one).<br>
+               ✅ <strong>Contribute</strong> – Send your pension contributions to SquarePyramid's secure account.<br>
+               ✅ <strong>Remittance</strong> – We remit the funds to your chosen Pension Fund Administrator (PFA).</p>
+        </div>
+
+        <!-- Why Join Section -->
+        <div class="content-box">
+            <h3>Why Join the Pilot?</h3>
+            <p>✔️ <strong>Hassle-Free Contributions</strong> – No need for a formal employer.<br>
+               ✔️ <strong>Compliance Assured</strong> – We follow all pension regulations.<br>
+               ✔️ <strong>Transparency & Security</strong> – Track your contributions with real-time updates.</p>
+        </div>
+
+        <!-- Who Can Join Section -->
+        <div class="content-box">
+            <h3>Who Can Join?</h3>
+            <p>📌 Freelancers & Gig Workers <br>
+               📌 Self-Employed Professionals <br>
+               📌 Anyone looking for an easy way to secure their retirement</p>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="cta-section">
+        <p class="cta-text">📢 Limited Spots Available! Sign up now:</p>
+        <a href="https://forms.gle/1cDhVTGAHUjjCqd18" class="cta-btn">Join the Pilot Program</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Have Questions? Contact us at <a href="mailto:your@email.com">info@squarepyramid.com</a> or call <strong>+2348062359896</strong></p>
+    </footer>
+</body>
+</html>
