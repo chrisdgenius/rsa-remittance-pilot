@@ -13,6 +13,8 @@
             background-color: #f4f4f4;
             color: #333;
             text-align: center;
+            height: 100vh;
+            overflow: hidden; /* Prevent scrolling */
         }
         h1, h2, h3 {
             margin: 0;
@@ -24,57 +26,62 @@
             background-color: #0044cc;
             color: white;
             text-align: center;
-            padding: 50px 20px;
+            padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 10;
         }
         header h1 {
-            font-size: 3em;
+            font-size: 2em;
             font-weight: bold;
         }
         header p {
-            font-size: 1.5em;
+            font-size: 1em;
             margin-top: 10px;
         }
 
         /* Main Content Section */
         .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 50px auto;
+            flex-wrap: wrap;
         }
 
         /* Content Box Style */
         .content-box {
             background-color: #ffffff;
             margin-bottom: 20px;
-            padding: 20px;
+            padding: 15px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-right: 10px;
+            flex: 1;
         }
 
         .content-box h3 {
             color: #007BFF;
-            font-size: 1.3em;
+            font-size: 1.1em;
             margin-bottom: 10px;
         }
 
         .content-box p {
-            font-size: 1.2em;
-            line-height: 1.6;
+            font-size: 0.9em;
+            line-height: 1.4;
             color: #555;
-            max-width: 600px;
-            margin: 0 auto;
         }
 
         /* Call-to-Action Button */
         .cta-btn {
             background-color: #ff6600;
             color: white;
-            font-size: 1.2em;
-            padding: 15px 30px;
+            font-size: 1em;
+            padding: 12px 25px;
             border: none;
             cursor: pointer;
             border-radius: 5px;
@@ -90,8 +97,8 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px 0;
-            position: fixed;
+            padding: 10px 0;
+            position: absolute;
             width: 100%;
             bottom: 0;
         }
@@ -139,11 +146,11 @@
                📌 Self-Employed Professionals <br>
                📌 Anyone looking for an easy way to secure their retirement</p>
         </div>
-
-        <!-- Call to Action Section -->
-        <p><strong>📢 Limited Spots Available! Sign up now:</strong></p>
-        <a href="YOUR_GOOGLE_FORM_LINK_HERE" class="cta-btn">Join the Pilot Program</a>
     </div>
+
+    <!-- Call to Action Section -->
+    <p><strong>📢 Limited Spots Available! Sign up now:</strong></p>
+    <a href="YOUR_GOOGLE_FORM_LINK_HERE" class="cta-btn">Join the Pilot Program</a>
 
     <!-- Footer Section -->
     <footer>
