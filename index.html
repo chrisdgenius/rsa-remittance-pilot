@@ -97,7 +97,7 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 5px 0; /* Reduced padding to make the footer smaller */
             position: absolute;
             width: 100%;
             bottom: 0;
@@ -110,6 +110,11 @@
 
         footer a:hover {
             text-decoration: underline;
+        }
+
+        /* Adjust the margin between paragraph and content */
+        .cta-btn + p {
+            margin-top: 10px; /* Reduced space between the paragraph and the button */
         }
     </style>
 </head>
@@ -151,7 +156,8 @@
     <!-- Call to Action Section -->
     <p><strong>📢 Limited Spots Available! Sign up now:</strong></p>
     <a href="YOUR_GOOGLE_FORM_LINK_HERE" class="cta-btn">Join the Pilot Program</a>
-   <!-- Footer Section -->
+
+    <!-- Footer Section -->
     <footer>
         <p>Have Questions? Contact us at <a href="mailto:your@email.com">your@email.com</a> or call <strong>+234XXXXXXXXXX</strong></p>
     </footer>
