@@ -5,65 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RSA Remittance Pilot Program | SquarePyramid</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
             text-align: center;
         }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+        h1, h2, h3 {
+            margin: 0;
+            padding: 0;
         }
-        h1 {
-            color: #007BFF;
-            font-size: 2.5em;
+
+        /* Header Section */
+        header {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            color: #333;
-            margin-top: 10px;
+        header h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        header p {
             font-size: 1.5em;
+            margin-top: 10px;
         }
-        h3 {
-            margin-top: 30px;
+
+        /* Main Content Section */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Content Box Style */
+        .content-box {
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-box h3 {
             color: #007BFF;
-            font-size: 1.2em;
+            font-size: 1.3em;
+            margin-bottom: 10px;
         }
-        p {
-            font-size: 1.1em;
+
+        .content-box p {
+            font-size: 1.2em;
             line-height: 1.6;
             color: #555;
-            margin-bottom: 20px;
+            max-width: 600px;
+            margin: 0 auto;
         }
-        .cta-button {
-            display: inline-block;
-            background: #007BFF;
+
+        /* Call-to-Action Button */
+        .cta-btn {
+            background-color: #ff6600;
             color: white;
-            padding: 12px 20px;
-            font-size: 18px;
-            text-decoration: none;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
             border-radius: 5px;
-            margin-top: 30px;
-            transition: background 0.3s ease;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
         }
-        .cta-button:hover {
-            background: #0056b3;
+        .cta-btn:hover {
+            background-color: #e65c00;
         }
+
+        /* Footer Section */
         footer {
-            margin-top: 30px;
-            font-size: 14px;
-            color: #777;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
+
         footer a {
-            color: #007BFF;
+            color: #ff6600;
             text-decoration: none;
         }
+
         footer a:hover {
             text-decoration: underline;
         }
@@ -71,37 +108,16 @@
 </head>
 <body>
 
+    <!-- Header Section -->
+    <header>
+        <h1>RSA Remittance Pilot Program</h1>
+        <p>Helping You Secure Your Financial Future, Effortlessly</p>
+    </header>
+
+    <!-- Main Content Section -->
     <div class="container">
-        <h1>Secure Your Future with Ease</h1>
-        <h2>Join Our RSA Remittance Pilot Program</h2>
-        
-        <p>Are you a freelancer, self-employed, or working without structured pension contributions?  
-        SquarePyramid is testing a seamless way to help individuals remit funds to their  
-        <strong>Retirement Savings Account (RSA)</strong>—even if you don’t have a formal employer.</p>
-
-        <h3>How It Works</h3>
-        <p>✅ <strong>Register</strong> – Sign up and provide your RSA details (or get help opening one).<br>
-           ✅ <strong>Contribute</strong> – Send your pension contributions to SquarePyramid’s secure account.<br>
-           ✅ <strong>Remittance</strong> – We remit the funds to your chosen Pension Fund Administrator (PFA).</p>
-
-        <h3>Why Join the Pilot?</h3>
-        <p>✔️ <strong>Hassle-Free Contributions</strong> – No need for a formal employer.<br>
-           ✔️ <strong>Compliance Assured</strong> – We follow all pension regulations.<br>
-           ✔️ <strong>Transparency & Security</strong> – Track your contributions with real-time updates.</p>
-
-        <h3>Who Can Join?</h3>
-        <p>📌 Freelancers & Gig Workers <br>
-           📌 Self-Employed Professionals <br>
-           📌 Anyone looking for an easy way to secure their retirement</p>
-
-        <p><strong>📢 Limited Spots Available! Sign up now:</strong></p>
-
-        <a href="YOUR_GOOGLE_FORM_LINK_HERE" class="cta-button">Join the Pilot Program</a>
-
-        <footer>
-            <p>Have Questions? Contact us at <a href="mailto:your@email.com">your@email.com</a> or call <strong>+234XXXXXXXXXX</strong></p>
-        </footer>
-    </div>
-
-</body>
-</html>
+        <!-- Register and Contribute Section -->
+        <div class="content-box">
+            <h3>How It Works</h3>
+            <p>✅ <strong>Register</strong> – Sign up and provide your RSA details (or get help opening one).<br>
+               ✅ <strong>Contribute</strong> – Send your pension contributions to SquareP
