@@ -1,224 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSA Remittance Pilot Program | SquarePyramid</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/chrisdgenius/rsa-remittance-pilot/main/squarecampaign%20logo.png" type="image/png">
-
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-        h1, h2, h3 {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Header Section */
-        header {
-            background-color: #0044cc;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            width: 100%;
-            z-index: 10;
-        }
-        header img {
-            width: 100px;
-            height: auto;
-            margin-right: 20px;
-        }
-        header h1 {
-            font-size: 2em;
-            font-weight: bold;
-        }
-        header p {
-            font-size: 1em;
-            margin-top: 10px;
-        }
-
-        /* Main Content Section */
-        .container {
-            display: flex;
-            justify-content: space-between;
-            padding: 5px;
-            max-width: 1000px;
-            margin: 20px auto;
-            flex-wrap: wrap;
-            flex-grow: 1;
-             width: 95%;
-            box-sizing: border-box;
-        }
-
-        /* Content Box Style */
-        .content-box {
-            background-color: #ffffff;
-            margin-bottom: 20px;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 30%;
-            margin-right: 10px;
-            flex: 1;
-            min-width: 280px;
-        }
-
-        .content-box h3 {
-            color: #007BFF;
-            font-size: 1.1em;
-            margin-bottom: 10px;
-        }
-
-        .content-box p {
-            font-size: 0.9em;
-            line-height: 1.4;
-            color: #555;
-        }
-
-        /* Call-to-Action Section */
-        .cta-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0 0 20px 0;
-            padding: 0 15px;
-                }
-
-        .cta-text {
-            font-weight: bold;
-            margin-bottom: 15px;
-            font-size: 1.1em;
-        }
-
-        /* Call-to-Action Button */
-        .cta-btn {
-            display: inline-block;
-            background-color: #ff6600;
-            color: white;
-            font-size: 1em;
-            padding: 12px 25px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            text-decoration: none;
-            max-width: 300px;
-            width: 100%;
-            text-align: center;
-        }
-        .cta-btn:hover {
-            background-color: #e65c00;
-        }
-
-        /* Footer Section */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 0px 0;
-            width: 100%;
-            margin-top: auto;
-        }
-
-        footer a {
-            color: #ff6600;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                margin: 20px;
-            }
-
-            .content-box {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-
-            .cta-btn {
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.5em;
-            }
-
-            header p {
-                font-size: 0.9em;
-            }
-
-            .cta-btn {
-                font-size: 0.9em;
-                padding: 10px 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SquarePyramid - Secure Your Retirement</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>RSA Remittance Pilot Program</h1>
-        <p>Helping You Secure Your Financial Future, Effortlessly</p>
-    </header>
-
-    <!-- Main Content Section -->
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="container">
-        <!-- Register and Contribute Section -->
-        <div class="content-box">
-            <h3>How It Works</h3>
-            <p>✅ <strong>Register</strong> – Sign up and provide your RSA details (or get help opening one).<br>
-               ✅ <strong>Contribute</strong> – Send your pension contributions to SquarePyramid's secure account.<br>
-               ✅ <strong>Remittance</strong> – We remit the funds to your chosen Pension Fund Administrator (PFA).</p>
-        </div>
-
-        <!-- Why Join Section -->
-        <div class="content-box">
-            <h3>Why Join the Pilot?</h3>
-            <p>✔️ <strong>Hassle-Free Contributions</strong> – No need for a formal employer.<br>
-               ✔️ <strong>Compliance Assured</strong> – We follow all pension regulations.<br>
-               ✔️ <strong>Transparency & Security</strong> – Track your contributions with real-time updates.</p>
-        </div>
-
-        <!-- Who Can Join Section -->
-        <div class="content-box">
-            <h3>Who Can Join?</h3>
-            <p>📌 Freelancers & Gig Workers <br>
-               📌 Self-Employed Professionals <br>
-               📌 Anyone looking for an easy way to secure their retirement</p>
-        </div>
+      <h1>Secure Your Future with SquarePyramid</h1>
+      <p>Start saving for retirement today with our easy, transparent, and compliant platform.</p>
+      <div class="cta-buttons">
+        <a href="#signup" class="btn-primary">Get Started Now</a>
+        <a href="#how-it-works" class="btn-secondary">Learn How It Works</a>
+      </div>
     </div>
+  </section>
 
-    <!-- Call to Action Section -->
-    <div class="cta-section">
-        <p class="cta-text">📢 Limited Spots Available! Sign up now:</p>
-        <a href="https://forms.gle/1cDhVTGAHUjjCqd18" class="cta-btn">Join the Pilot Program</a>
+  <!-- Value Proposition Section -->
+  <section class="value-proposition">
+    <div class="container">
+      <h2>Why Choose SquarePyramid?</h2>
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-book"></i>
+          <h3>Financial Education</h3>
+          <p>Learn everything you need to know about retirement savings and the Contributory Pension Scheme (CPS).</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-user-plus"></i>
+          <h3>RSA Registration Assistance</h3>
+          <p>We help you open a Retirement Savings Account (RSA) with licensed Pension Fund Administrators (PFAs).</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-wallet"></i>
+          <h3>Seamless Contributions</h3>
+          <p>Make voluntary contributions directly to your RSA through our secure platform.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-chart-line"></i>
+          <h3>Transparency and Control</h3>
+          <p>Track your contributions and RSA balance in real-time.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>Have Questions? Contact us at <a href="mailto:your@email.com">info@squarepyramid.com</a> or call <strong>+2348062359896</strong></p>
-    </footer>
+  <!-- How It Works Section -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <h2>How SquarePyramid Works</h2>
+      <div class="steps">
+        <div class="step">
+          <i class="fas fa-user-plus"></i>
+          <h3>Sign Up</h3>
+          <p>Create an account on SquarePyramid in minutes.</p>
+        </div>
+        <div class="step">
+          <i class="fas fa-folder-open"></i>
+          <h3>Open an RSA</h3>
+          <p>We guide you through opening an RSA with a licensed PFA.</p>
+        </div>
+        <div class="step">
+          <i class="fas fa-piggy-bank"></i>
+          <h3>Start Saving</h3>
+          <p>Make voluntary contributions directly to your RSA through our platform.</p>
+        </div>
+        <div class="step">
+          <i class="fas fa-chart-line"></i>
+          <h3>Track Your Progress</h3>
+          <p>Monitor your savings and RSA balance in real-time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Users Are Saying</h2>
+      <div class="testimonial-cards">
+        <div class="card">
+          <p>"SquarePyramid made it so easy to start saving for retirement. I feel more secure about my future!"</p>
+          <h4>– Chika, Freelance Designer</h4>
+        </div>
+        <div class="card">
+          <p>"I didn’t know much about RSAs, but SquarePyramid’s educational resources helped me understand everything. Highly recommend!"</p>
+          <h4>– Emeka, Small Business Owner</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call-to-Action Section -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Secure Your Future?</h2>
+      <p>Join thousands of Nigerians who are taking control of their retirement savings with SquarePyramid.</p>
+      <div class="cta-buttons">
+        <a href="#signup" class="btn-primary">Sign Up Now</a>
+        <a href="#download" class="btn-secondary">Download the App</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#about">About Us</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="contact-info">
+        <p>Email: support@squarepyramid.com</p>
+        <p>Phone: +234 800 123 4567</p>
+        <p>Address: 123 Retirement Street, Lagos, Nigeria</p>
+      </div>
+      <div class="newsletter">
+        <p>Stay updated with the latest tips on retirement savings. Subscribe to our newsletter!</p>
+        <form>
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
